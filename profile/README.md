@@ -72,7 +72,7 @@ curl -X POST https://api.dcision.io/v1/decisions/lead-qualification \
 
 | Where | How |
 | --- | --- |
-| **Any language** | `POST https://api.dcision.io/v1/decisions/{slug}` with your API key — [cURL, Node.js and Python examples](https://github.com/DcisionIO/examples) |
+| **Any language** | `POST https://api.dcision.io/v1/decisions/{slug}` with your API key — [cURL, Node.js and Python examples](https://github.com/DcisionIO/dcision) |
 | **No-code / CRMs / forms** | Turn on the decision's **webhook URL** and call it from n8n, Make, Zapier or any form — no API key needed. [Docs](https://docs.dcision.io/docs/api/webhook-trigger) |
 | **AI agents (MCP)** | Remote MCP server at `https://api.dcision.io/mcp` |
 | **Claude Code** | MCP + a ready-made skill (below) |
@@ -94,7 +94,7 @@ curl -fsSL https://docs.dcision.io/skills/dcision/SKILL.md -o ~/.claude/skills/d
 
 ## 🧩 Ready-made decisions
 
-Lead qualification · support routing · spam detection · agent routing · RAG relevance · ticket triage · voice banking commands · resume screening · customer-service router — schemas and sample states in **[DcisionIO/examples](https://github.com/DcisionIO/examples)**.
+Lead qualification · support routing · spam detection · agent routing · RAG relevance · ticket triage · voice banking commands · resume screening · customer-service router — schemas and sample states in **[DcisionIO/dcision](https://github.com/DcisionIO/dcision)**.
 
 ## 💳 Pricing in one line
 
