@@ -32,14 +32,10 @@ Send any state, get typed answers with a confidence for each — and the next ac
 
 ## 🔁 How it works
 
-```mermaid
-flowchart LR
-  E["Event · message · transaction"] --> D{{"Dcision<br/>typed answers + confidence"}}
-  D -->|"route = sales"| A["Agent"]
-  D -->|"needs reasoning"| L["LLM"]
-  D -->|"intent ≥ 0.8"| W["Workflow · API · webhook"]
-  D -->|"spam"| R["Fixed reply / block"]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DcisionIO/.github/main/assets/flow-dark.png">
+  <img alt="An agent without Dcision spends an LLM call and parses free text to pick the next action; with Dcision a typed answer with confidence picks it — calling an agent, LLM, API, workflow, webhook or function, or answering directly" src="https://raw.githubusercontent.com/DcisionIO/.github/main/assets/flow-light.png" width="100%">
+</picture>
 
 1. **Send the state** — any event, message or JSON context from your app or agent.
 2. **Define decisions** — choice, score and probability questions in a versioned Decision Schema.
